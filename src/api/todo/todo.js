@@ -1,3 +1,4 @@
+const { Schema } = require("mongoose");
 const restful = require("node-restful");
 const mongoose = restful.mongoose;
 
@@ -7,4 +8,4 @@ const todoSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now },
 });
 
-Modules.exports = restful.model("Todo", todoSchema);
+module.exports = restful.model("Todo", todoSchema);
